@@ -15,6 +15,7 @@ public class ItemSorter {
         this.items = items;
     }
 
+    //this passes all ItemSorter tests
     public Item[] sort(Comparator<Item> comparator) {
         ArrayList<Item> myList = new ArrayList<>(Arrays.asList(items));
         myList.sort(Comparator.comparing(Item::getId));
